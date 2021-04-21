@@ -2324,7 +2324,7 @@ clone of everything."
                  "git" "clone" "--origin" remote
                  "--no-checkout" url repo-dir
                  "--depth" (number-to-string depth)
-                 "--no-single-branch"
+                 "--single-branch"
                  "--no-tags"
                  (when branch `("--branch" ,branch))))
       ;; Fallback for dumb http protocol.
